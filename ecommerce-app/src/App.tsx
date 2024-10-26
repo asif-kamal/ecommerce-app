@@ -1,9 +1,9 @@
-import "./App.css";
+import Navigation from "./components/NavBar/NavBar";
 
 function App() {
   return (
-    <div>
-      <h2 className="text-3xl font-bold underline">Hello</h2>
+    <div className="App">
+      <Navigation />
     </div>
   );
 }
