@@ -3,6 +3,7 @@ import Card from "../Card/Card";
 import favicon from "../../assets/icon/electronics_icon.png";
 import { responsive } from "../../utils/Section.constants";
 import Carousel from "react-multi-carousel";
+import "./NewProducts.css"
 
 const items = [
   {
@@ -47,7 +48,7 @@ const NewProducts = () => {
           itemClass={'react-slider-custom-item'}
           className='px-8'
         >
-          {items && items?.map((item,index)=> <Card key={item?.title +index} title={item.title} imagePath={item.imagePath}/>)}
+          {items && items?.map((item,index)=> <Card key={item?.title + index} title={item.title} imagePath={item.imagePath} description={""} actionArrow={true}/>)}
   
         </Carousel>
       </>
