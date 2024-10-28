@@ -17,17 +17,26 @@ const Navigation: React.FC = () => {
       <div className="flex flex-1 justify-end items-center">
         <ul className="flex flex-row-reverse gap-10 pr-8">
           <li>
-            <a href="/computers" className="text-lg font-normal text-black">
+            <a
+              href="/computers"
+              className="text-lg font-normal text-black hover:text-blue-700"
+            >
               Computers
             </a>
           </li>
           <li>
-            <a href="/tv" className="text-lg font-normal text-black">
+            <a
+              href="/tv"
+              className="text-lg font-normal text-black hover:text-blue-700"
+            >
               TV
             </a>
           </li>
           <li>
-            <a href="/audiovideo" className="text-lg font-normal text-black">
+            <a
+              href="/audiovideo"
+              className="text-lg font-normal text-black hover:text-blue-700"
+            >
               Audio & Video
             </a>
           </li>
