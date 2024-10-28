@@ -1,10 +1,9 @@
-
-interface CardsProps {
+interface CardProps {
   imagePath: string;
   title: string;
 }
 
-const Cards = ({ imagePath, title }: CardsProps) => {
+const Card = ({ imagePath, title }: CardProps) => {
   return (
     <div className="flex items-center flex-col p-8">
       <img
@@ -17,4 +16,4 @@ const Cards = ({ imagePath, title }: CardsProps) => {
   );
 };
 
-export default Cards;
+export default Card;
