@@ -17,7 +17,7 @@ const HeroSection = () => {
         <p className="mt-3 text-white text-outline sm:mt-5 sm:max-w-xl text-2xl">
           Feature-Rich / Intuitive / Powerful
         </p>
-        <button className="border rounded mt-6 border-gray-400 text-white bg-black w-44 h-12">
+        <button className="border rounded mt-6 border-gray-400 hover:bg-blue-950 text-white bg-black w-44 h-12">
           Shop Now
         </button>
       </main>
