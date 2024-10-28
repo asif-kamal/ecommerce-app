@@ -5,6 +5,9 @@ import tailwindcss from "tailwindcss";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-multi-carousel'],
+  },
   css: {
     postcss: {
       plugins: [tailwindcss()],
