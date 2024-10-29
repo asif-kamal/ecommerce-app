@@ -17,7 +17,7 @@ const Category: React.FC<CategoryProps> = ({title, data}) => {
     <SectionHeading title={title}/>
     {data && data?.map((item, index) => {
         return (
-            <Card key={index} title={item?.title} description={item?.description} imagePath={item?.image} actionArrow={true}/>
+            <Card key={index} title={item?.title} description={item?.description} imagePath={item?.image} height={'280px'} width={''} actionArrow={true}/>
         )
     })}
     </>
