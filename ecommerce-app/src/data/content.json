@@ -1,0 +1,14 @@
+{
+    "category":[
+        {
+        "title": "Categories for Cameras",
+        "data": [
+            {
+                "title": "Cameras and Accessories",
+                "description": "Explore Now!",
+                "image": "./camera.png"
+            }
+        ]
+        }
+    ]
+}
