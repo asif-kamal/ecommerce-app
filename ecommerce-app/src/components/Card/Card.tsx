@@ -2,23 +2,32 @@ interface CardProps {
   imagePath: string;
   title: string;
   description: string;
-  actionArrow: boolean
+  actionArrow: boolean;
+  height: string;
+  width: string;
 }
 
-const Card = ({ imagePath, title, description, actionArrow }: CardProps) => {
+const Card = ({
+  imagePath,
+  title,
+  description,
+  actionArrow,
+  height,
+  width,
+}: CardProps) => {
   return (
-    <div className="flex items-center flex-col p-8">
+    <div className="flex items-start flex-col p-8">
       <img
-        className="h-[240px] w-[200px] bg-cover bg-center border rounded hover:scale-105 cursor-pointer"
+        className={`h-[${height ? height : "240px"}] w-[${width ? width : "240px"}] bg-cover bg-center border rounded hover:scale-105 cursor-pointer`}
         src={imagePath}
         alt="electronics"
       />
-      <div className="flex justify-between">
-        <div className="flex flex-col p-5">
+      <div className="w-full">
+        <div className="flex flex-col text-left p-5">
           <p className="text-[16px] p-2">{title}</p>
-          {description && <p className="text-[14px]">{description}</p>}
+          {description && <p className="text-[14px] px-2 text-gray-500">{description}</p>}
         </div>
-        {actionArrow && <div></div>}
+        {actionArrow && <div className="text-left px-2">→</div>}
       </div>
     </div>
   );
