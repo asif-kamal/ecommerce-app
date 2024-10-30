@@ -1,6 +1,6 @@
-import React from 'react'
-import SectionHeading from '../SectionHeading/SectionHeading'
-import Card from '../../Card/Card'
+import React from "react";
+import SectionHeading from "../SectionHeading/SectionHeading";
+import Card from "../../Card/Card";
 
 interface CategoryProps {
   title: string;
@@ -11,17 +11,28 @@ interface CategoryProps {
   }>;
 }
 
-const Category: React.FC<CategoryProps> = ({title, data}) => {
+const Category: React.FC<CategoryProps> = ({ title, data }) => {
   return (
     <>
-    <SectionHeading title={title}/>
-    {data && data?.map((item, index) => {
-        return (
-            <Card key={index} title={item?.title} description={item?.description} imagePath={item?.image} height={'280px'} width={''} actionArrow={true}/>
-        )
-    })}
+      <SectionHeading title={title} />
+      <div className="flex px-8">
+        {data &&
+          data?.map((item, index) => {
+            return (
+              <Card
+                key={index}
+                title={item?.title}
+                description={item?.description}
+                imagePath={item?.image}
+                height={"280px"}
+                width={""}
+                actionArrow={true}
+              />
+            );
+          })}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Category
+export default Category;
