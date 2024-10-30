@@ -9,6 +9,16 @@
                 "image": "./camera.png"
             }
         ]
+        },
+        {
+            "title": "Categories for Computers",
+            "data": [
+                {
+                    "title": "Laptops, Desktops, Tablets",
+                    "description": "Explore Now!",
+                    "image": "./camera.png"
+                }
+            ]
         }
     ]
 }
