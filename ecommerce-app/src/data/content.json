@@ -7,12 +7,42 @@
                 "title": "Cameras and Accessories",
                 "description": "Explore Now!",
                 "image": "./camera.png"
+            },
+            {
+                "title": "Cameras and Accessories",
+                "description": "Explore Now!",
+                "image": "./camera.png"
+            },
+            {
+                "title": "Cameras and Accessories",
+                "description": "Explore Now!",
+                "image": "./camera.png"
+            },
+            {
+                "title": "Cameras and Accessories",
+                "description": "Explore Now!",
+                "image": "./camera.png"
             }
         ]
         },
         {
             "title": "Categories for Computers",
             "data": [
+                {
+                    "title": "Laptops, Desktops, Tablets",
+                    "description": "Explore Now!",
+                    "image": "./camera.png"
+                },
+                {
+                    "title": "Laptops, Desktops, Tablets",
+                    "description": "Explore Now!",
+                    "image": "./camera.png"
+                },
+                {
+                    "title": "Laptops, Desktops, Tablets",
+                    "description": "Explore Now!",
+                    "image": "./camera.png"
+                },
                 {
                     "title": "Laptops, Desktops, Tablets",
                     "description": "Explore Now!",
