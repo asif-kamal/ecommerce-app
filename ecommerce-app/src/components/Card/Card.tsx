@@ -1,3 +1,5 @@
+import ArrowIcon from "../Common/ArrowIcon";
+
 interface CardProps {
   imagePath: string;
   title: string;
@@ -16,19 +18,16 @@ const Card = ({
   width,
 }: CardProps) => {
   return (
-    <div className="flex items-start flex-col pl-12">
-      <img
-        className={`h-[${height ? height : "240px"}] w-[${width ? width : "240px"}] bg-cover bg-center border rounded hover:scale-105 cursor-pointer`}
-        src={imagePath}
-        alt="electronics"
-      />
-      <div className="w-full">
-        <div className="flex flex-col text-left p-5">
-          <p className="text-[16px] p-0">{title}</p>
-          {description && <p className="text-[14px] p-0 text-gray-500">{description}</p>}
+    <div className='flex  flex-col p-6'>
+        <img className={`h-[${height? height:'220px'}] max-h-[${height? height:'220px'}] w-[${width? width:'200px'}] max-w-[${width? width:'220px'}]
+         border rounded-lg hover:scale-105 cursor-pointer`} width={width??"200px"} height={height?? "220px"} src={imagePath} alt='Jeans'/>
+         <div className='flex justify-between items-center'>
+          <div className='flex flex-col'>
+          <p className='text-[16px] p-1'>{title}</p>
+          {description && <p className='text-[12px] px-1 text-gray-600'>{description}</p>}
+          </div>
+          {actionArrow && <span className='cursor-pointer pr-2 items-center'><ArrowIcon /></span>}
         </div>
-        {actionArrow && <div className="text-left px-2">→</div>}
-      </div>
     </div>
   );
 };
