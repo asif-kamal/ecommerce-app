@@ -3,7 +3,7 @@ import Card from "../Card/Card";
 import favicon from "../../assets/icon/electronics_icon.png";
 import { responsive } from "../../utils/Section.constants";
 import Carousel from "react-multi-carousel";
-import "./NewProducts.css"
+import "./NewProducts.css";
 
 const items = [
   {
@@ -30,29 +30,39 @@ const items = [
     id: 5,
     title: "Item",
     imagePath: favicon,
-  }
+  },
 ];
 
 const NewProducts = () => {
-    return (
-      <>
-      <SectionHeading title={'New Arrivals'}/>
+  return (
+    <>
+      <SectionHeading title={"New Arrivals"} />
       <Carousel
-          responsive={responsive}
-          autoPlay={false}
-          swipeable={true}
-          draggable={false}
-          showDots={false}
-          infinite={false}
-          partialVisible={false}
-          itemClass={'react-slider-custom-item'}
-          className='px-8'
-        >
-          {items && items?.map((item,index)=> <Card key={item?.title + index} title={item.title} imagePath={item.imagePath} description={""} actionArrow={true}/>)}
-  
-        </Carousel>
-      </>
-    )
-  }
+        responsive={responsive}
+        autoPlay={false}
+        swipeable={true}
+        draggable={false}
+        showDots={false}
+        infinite={false}
+        partialVisible={false}
+        itemClass={"react-slider-custom-item"}
+        className="px-8"
+      >
+        {items &&
+          items?.map((item, index) => (
+            <Card
+              key={item?.title + index}
+              title={item.title}
+              imagePath={item.imagePath}
+              description={""}
+              actionArrow={false}
+              height={"200px"}
+              width={"300px"}
+            />
+          ))}
+      </Carousel>
+    </>
+  );
+};
 
 export default NewProducts;
