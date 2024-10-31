@@ -50,5 +50,18 @@
                 }
             ]
         }
-    ]
+    ],
+    "footer":{
+        "items":[
+            {
+                "title": "Need Help",
+                "list": [
+                    {
+                        "label": "",
+                        "path": "/contact-us"
+                    }
+                ]
+            }
+        ]
+    }
 }
