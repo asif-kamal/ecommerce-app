@@ -57,11 +57,62 @@
                 "title": "Need Help",
                 "list": [
                     {
-                        "label": "",
+                        "label": "Contact Us",
                         "path": "/contact-us"
+                    },
+                    {
+                        "label": "Track Order",
+                        "path": "/track-order"
+                    },
+                    {
+                        "label": "Returns & Refunds",
+                        "path": "/returns"
+                    },
+                    {
+                        "label": "FAQ",
+                        "path": "/faq"
+                    },
+                    {
+                        "label": "Career",
+                        "path": "/career"
+                    }  
+                ]
+            },
+            {
+                "title":"Company",
+                "list":[
+                    {
+                        "label":"About Us",
+                        "path":"/about"
+                    },
+                    {
+                        "label":"Media",
+                        "path":"/media"
                     }
                 ]
+            },
+            {
+                "title":"More Info",
+                "list":[
+                    {
+                        "label":"Term and Conditions",
+                        "path":"/terms-conditions"
+                    },
+                    {
+                        "label":"Privacy Policy",
+                        "path":"/policies"
+                    },
+                    {
+                        "label":"Shipping Policy",
+                        "path":"/policies"
+                    }
+                ]
+            },
+            {
+                "title":"Location",
+                "description":"Location Country"
             }
-        ]
+        ],
+        "copyright":"Copyright © 2024 Ecommercews"
     }
 }
