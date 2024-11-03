@@ -2,6 +2,7 @@ import React from "react";
 import WishList from "../Common/WishList";
 import AccountIcon from "../Common/AccountIcon";
 import CartIcon from "../Common/CartIcon";
+import { Link, NavLink } from "react-router-dom";
 
 const Navigation: React.FC = () => {
   return (
@@ -17,28 +18,36 @@ const Navigation: React.FC = () => {
       <div className="flex flex-1 justify-end items-center">
         <ul className="flex flex-row-reverse gap-10 pr-8">
           <li>
-            <a
-              href="/computers"
+            <NavLink
+              to="/computers"
               className="text-lg font-normal text-black hover:text-blue-700"
             >
               Computers
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="/tv"
+            <NavLink
+              to="/tv"
               className="text-lg font-normal text-black hover:text-blue-700"
             >
               TV
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="/audiovideo"
+            <NavLink
+              to="/audiovideo"
               className="text-lg font-normal text-black hover:text-blue-700"
             >
               Audio & Video
-            </a>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/shop"
+              className="text-lg font-normal text-black hover:text-blue-700"
+            >
+              Shop
+            </NavLink>
           </li>
         </ul>
 
@@ -78,9 +87,9 @@ const Navigation: React.FC = () => {
             </button>
           </li>
           <li>
-            <a href="/cart-items">
+            <Link to="/cart-items">
               <CartIcon />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
