@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import HeroSection from "./components/HeroSection/HeroSection";
 import Navigation from "./components/NavBar/NavBar";
 import Category from "./components/Section/Category/Category";
@@ -17,6 +18,7 @@ function App() {
             {...item}
           />
         ))}
+        <Footer content={content?.footer}/>
     </>
   );
 }
