@@ -3,6 +3,7 @@ import WishList from "../Common/WishList";
 import AccountIcon from "../Common/AccountIcon";
 import CartIcon from "../Common/CartIcon";
 import { Link, NavLink } from "react-router-dom";
+import './NavBar.css'
 
 const Navigation: React.FC = () => {
   return (

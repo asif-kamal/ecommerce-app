@@ -1,14 +1,14 @@
 import Footer from "./components/Footer/Footer";
 import HeroSection from "./components/HeroSection/HeroSection";
-import Navigation from "./components/NavBar/NavBar";
 import Category from "./components/Section/Category/Category";
 import NewProducts from "./components/Section/NewProducts";
+import NavBar from "./components/NavBar/NavBar";
 import content from "./data/content.json";
 
 function App() {
   return (
     <>
-      <Navigation />
+      <NavBar />
       <HeroSection />
       <NewProducts />
       {content?.category &&
