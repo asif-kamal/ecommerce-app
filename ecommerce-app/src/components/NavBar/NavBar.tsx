@@ -44,7 +44,7 @@ const Navigation: React.FC = () => {
           </li>
           <li>
             <NavLink
-              to="/shop"
+              to="/"
               className="text-lg font-normal text-black hover:text-blue-700"
             >
               Shop
