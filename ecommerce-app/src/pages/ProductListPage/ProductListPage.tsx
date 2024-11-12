@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useMemo } from "react";
 import FilterIcon from "../../components/Common/FilterIcon";
+import content from "../../data/content.json";
 
-const ProductListPage = () => {
+const categories = content?.categories;
+
+interface Category {
+  code: string;
+  description: string;
+  // Add other properties as needed
+}
+
+const ProductListPage = ({ categoryType }: { categoryType: string }) => {
+  const categoryContent: Category | undefined = useMemo(() => {
+    return categories?.find((category) => category.code === categoryType);
+  }, [categoryType]);
+
   return (
     <div>
       <div className="flex">
@@ -15,8 +28,8 @@ const ProductListPage = () => {
             <p className="text-[16px] text-black mt-5">Categories</p>
           </div>
         </div>
-        <div className="p-[40px]">
-          <p>Hello</p>
+        <div className="p-[10px]">
+          <p>{categoryContent?.description}</p>
           {/* Products */}
         </div>
       </div>
