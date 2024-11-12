@@ -9,13 +9,17 @@ export const router = createBrowserRouter([
     element: <StoreAppWrapper />,
     children: [
       {
-        path:"/",
-        element: <App />
+        path: "/",
+        element: <App />,
       },
       {
-        path:"/audiovideo",
-        element: <ProductListPage />
-      }
-    ]
+        path: "/audiovideo",
+        element: <ProductListPage categoryType={"AUDIOVIDEO"} />,
+      },
+      {
+        path: "/tv",
+        element: <ProductListPage categoryType={"TV"} />,
+      },
+    ],
   },
 ]);
