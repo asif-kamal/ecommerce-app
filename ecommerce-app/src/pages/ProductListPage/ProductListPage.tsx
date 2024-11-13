@@ -28,8 +28,8 @@ const ProductListPage = ({ categoryType }: { categoryType: string }) => {
             <p className="text-[16px] text-black mt-5">Categories</p>
           </div>
         </div>
-        <div className="p-[10px]">
-          <p>{categoryContent?.description}</p>
+        <div className="p-[15px]">
+          <p className="text-black text-lg">{categoryContent?.description}</p>
           {/* Products */}
         </div>
       </div>
