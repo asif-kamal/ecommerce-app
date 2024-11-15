@@ -1,17 +1,12 @@
 import React, { useMemo } from "react";
 import FilterIcon from "../../components/Common/FilterIcon";
 import content from "../../data/content.json";
+import Categories from "../../components/Filters/Categories";
 
 const categories = content?.categories;
 
-interface Category {
-  code: string;
-  description: string;
-  // Add other properties as needed
-}
-
 const ProductListPage = ({ categoryType }: { categoryType: string }) => {
-  const categoryContent: Category | undefined = useMemo(() => {
+  const categoryContent = useMemo(() => {
     return categories?.find((category) => category.code === categoryType);
   }, [categoryType]);
 
@@ -26,11 +21,16 @@ const ProductListPage = ({ categoryType }: { categoryType: string }) => {
           </div>
           <div>
             <p className="text-[16px] text-black mt-5">Categories</p>
+            <Categories
+              types={(categoryContent?.types ?? []).map((type) => ({
+                code: "code" in type ? type.code : type.id.toString(),
+                name: type.name,
+              }))}
+            />
           </div>
         </div>
         <div className="p-[15px]">
           <p className="text-black text-lg">{categoryContent?.description}</p>
-          {/* Products */}
         </div>
       </div>
     </div>
