@@ -15,13 +15,13 @@ const Categories: React.FC<CategoriesProps> = ({ types }) => {
     <div>
       {types?.map((type) => {
         return (
-          <div className="flex" key={type.code}>
+          <div className="flex items-center p-1" key={type.code}>
             <input
               type="checkbox"
               name={type?.code}
-              className="border rounded-lg w-4 h-4 accent-black text-black"
+              className="border rounded-xl w-4 h-4 accent-black text-black"
             />
-            <label htmlFor={type?.code}>{type?.name}</label>
+            <label htmlFor={type?.code} className="px-2 text-[14px] text-gray-600">{type?.name}</label>
           </div>
         );
       })}
