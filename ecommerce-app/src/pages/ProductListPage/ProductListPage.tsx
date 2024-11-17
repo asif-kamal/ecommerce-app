@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import FilterIcon from "../../components/Common/FilterIcon";
 import content from "../../data/content.json";
 import Categories from "../../components/Filters/Categories";
+import PriceFilter from "../../components/Filters/PriceFilter";
 
 const categories = content?.categories;
 
@@ -27,6 +28,10 @@ const ProductListPage = ({ categoryType }: { categoryType: string }) => {
                 name: type.name,
               }))}
             />
+            <hr></hr>
+          </div>
+          <div>
+            <PriceFilter />
           </div>
         </div>
         <div className="p-[15px]">
