@@ -30,9 +30,9 @@ const ProductListPage = ({ categoryType }: { categoryType: string }) => {
             />
             <hr></hr>
           </div>
-          <div>
-            <PriceFilter />
-          </div>
+          <PriceFilter />
+          <hr></hr>
+          {/* Colors */}
         </div>
         <div className="p-[15px]">
           <p className="text-black text-lg">{categoryContent?.description}</p>
