@@ -148,7 +148,11 @@
               "name": "HDTVs",
               "description": "HDTVs"
             }
-          ]
+          ],
+          "meta_data":{
+            "colors":["Black", "White", "Purple", "Gray", "Blue","Red","Orange","Navy","Grey","Yellow","Pink","Green"],
+            "sizes":["S","M","L","XL","XXL"]
+          }
         },
         {
           "id": 2,
@@ -177,7 +181,11 @@
               "code":"SPEAKERS",
               "name": "Speakers"
             }
-        ]
+        ],
+        "meta_data":{
+            "colors":["Black", "White", "Purple", "Gray", "Blue","Red","Orange","Navy","Grey","Yellow","Pink","Green"],
+            "sizes":["S","M","L","XL","XXL"]
+          }
         },
         {
           "id": 3,

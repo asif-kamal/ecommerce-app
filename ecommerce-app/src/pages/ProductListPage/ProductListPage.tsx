@@ -3,6 +3,7 @@ import FilterIcon from "../../components/Common/FilterIcon";
 import content from "../../data/content.json";
 import Categories from "../../components/Filters/Categories";
 import PriceFilter from "../../components/Filters/PriceFilter";
+import ColorsFilter from "../../components/Filters/ColorsFilter";
 
 const categories = content?.categories;
 
@@ -33,6 +34,7 @@ const ProductListPage = ({ categoryType }: { categoryType: string }) => {
           <PriceFilter />
           <hr></hr>
           {/* Colors */}
+          <ColorsFilter colors={categoryContent?.meta_data?.colors}/>
         </div>
         <div className="p-[15px]">
           <p className="text-black text-lg">{categoryContent?.description}</p>
