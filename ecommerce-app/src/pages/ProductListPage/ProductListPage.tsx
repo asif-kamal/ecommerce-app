@@ -34,7 +34,7 @@ const ProductListPage = ({ categoryType }: { categoryType: string }) => {
           <PriceFilter />
           <hr></hr>
           {/* Colors */}
-          <ColorsFilter colors={categoryContent?.meta_data?.colors}/>
+          <ColorsFilter colors={categoryContent?.meta_data?.colors ?? []}/>
         </div>
         <div className="p-[15px]">
           <p className="text-black text-lg">{categoryContent?.description}</p>
