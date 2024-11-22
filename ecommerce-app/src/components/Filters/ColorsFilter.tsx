@@ -39,12 +39,12 @@ const ColorsFilter: React.FC<ColorsFilterProps> = ({ colors }) => {
       <div className="flex flex-wrap p-4">
         {(colors as ColorKey[])?.map((item: ColorKey) => {
           return (
-            <div key={item} className="flex flex-col gap-1">
+            <div key={item} className="flex flex-col mr-2">
               <div
-                className="w-8 h-8 border rounded-xl mr-4 mb-4"
+                className="w-8 h-8 border rounded-xl mr-4 cursor-pointer hover: outline-2 hover: scale-105"
                 style={{ background: `${colorSelector[item]}` }}
               ></div>
-              <p>{item}</p>
+              <p className="text-sm text-gray-400 mb-2">{item}</p>
             </div>
           );
         })}
