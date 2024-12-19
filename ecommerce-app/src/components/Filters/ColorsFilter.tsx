@@ -35,7 +35,7 @@ interface ColorsFilterProps {
 const ColorsFilter: React.FC<ColorsFilterProps> = ({ colors }) => {
   const [appliedColors, setAppliedColors] = useState<ColorKey[]>([]);
   const onClickDiv = useCallback((item: ColorKey) => {
-    console.log("item", item);
+    // console.log("item", item);
     if (appliedColors.indexOf(item) > -1) {
       appliedColors.splice(appliedColors.indexOf(item), 1);
     } else {
