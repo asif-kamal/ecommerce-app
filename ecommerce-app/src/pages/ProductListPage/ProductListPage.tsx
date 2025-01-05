@@ -13,6 +13,10 @@ const ProductListPage = ({ categoryType }: { categoryType: string }) => {
     return categories?.find((category) => category.code === categoryType);
   }, [categoryType]);
 
+  const productListItems = useMemo(()=> {
+    return content?.products?.filter((product)=> product?.category_id === categoryContent?.id)
+  }, [categoryContent])
+
   return (
     <div>
       <div className="flex">
